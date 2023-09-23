@@ -1,0 +1,180 @@
+/* Variables */
+:root {
+    --Light-red: hsl(0, 100%, 67%);
+    --Orangey-yellow: hsl(39, 100%, 56%);
+    --Green-teal: hsl(166, 100%, 37%);
+    --Cobalt-blue: hsl(234, 85%, 45%);
+
+    --Light-red-bg: hsl(0, 100%, 97%);
+    --Orangey-yellow-bg: hsl(39, 100%, 97%);
+    --Green-teal-bg: hsl(166, 100%, 97%);
+    --Cobalt-blue-bg: hsl(234, 85%, 97%);
+
+    --Light-slate-blue-background: hsl(252, 100%, 67%);
+    --Light-royal-blue-background: hsl(241, 81%, 54%);
+    --Violet-blue-circle: hsla(256, 72%, 46%, 1);
+    --Persian-blue-circle: hsla(241, 72%, 46%, 0);
+
+    --White: hsl(0, 0%, 100%);
+    --Pale-blue: hsl(221, 100%, 96%);
+    --Light-lavender: hsl(241, 100%, 89%);
+    --Dark-gray-blue: hsl(224, 30%, 27%);
+
+    --Light-lavender-lighter: hsl(241, 100%, 77%);
+}
+
+
+/* Global Styles */
+body {    
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    height: 80vh;
+    font-family: 'Hanken Grotesk', sans-serif;
+    
+}
+
+#container{
+    margin: auto;
+    /* max-width: 250px; */
+    display: flex;
+    border: 1px solid var(--Pale-blue);
+    box-shadow: 10px 10px 20px var(--Pale-blue);
+    border-radius: 25px;
+}
+
+/* Styles for Result box */
+#result-box {
+    background-image:linear-gradient(to top, var(--Light-royal-blue-background), var(--Light-slate-blue-background));
+    color: var(--White);
+    padding: 25px;
+    border-radius: 25px;
+    max-width: 250px;
+
+}
+
+.result-title {
+    font-size: 18px;
+    margin: 5px 0;
+    color: var(--Light-lavender);
+}
+
+
+.score-card {
+    background-image:linear-gradient(var(--Violet-blue-circle), var(--Persian-blue-circle));
+    width: 115px;
+    border-radius: 50%;
+    padding: 25px 15px;
+    margin: 30px auto;
+    max-width: 300px;
+}
+
+.grade {
+    font-size: 50px;
+    font-weight: bold;
+}
+
+.total-grade{
+    font-size: smaller;
+    /* Fix color opacity below - Lighter Text */
+    color: var(--Light-lavender-lighter);   
+}
+
+.score-description {
+    font-size: 24px;
+}
+
+.score-text {
+    font-size: 14px;
+    padding: 0 25px;
+    color: var(--Light-lavender);
+}
+
+
+/* Styles for Summary Box */
+#summary-box {
+    max-width: 250px;
+    padding: 25px;
+}
+
+.summary-title{
+    text-align: left;
+    margin: 0;
+    font-size: 18px;
+}
+
+.scores {
+    width: 250px;
+    margin: 20px 0;
+    text-align: left;
+}
+
+.row {
+    display: flex;    
+    padding: 10px;
+    border-radius: 10px;
+    margin: 15px 0;
+}
+
+.icon{
+    padding-right: 5px;
+    flex: 5;
+}
+
+.desc {
+    flex: 80;
+}
+
+.reaction-txt {    
+    color: var(--Light-red);
+}
+
+.reaction-bg {
+    background-color: var(--Light-red-bg);
+}
+
+.memory-txt {    
+    color: var(--Orangey-yellow);
+}
+
+.memory-bg {
+    background-color: var(--Orangey-yellow-bg);
+}
+
+.verbal-txt {    
+    color: var(--Green-teal);
+}
+
+.verbal-bg {
+    background-color: var(--Green-teal-bg);
+}
+
+.visual-txt {    
+    color: var(--Cobalt-blue);
+}
+
+.visual-bg {
+    background-color: var(--Cobalt-blue-bg);
+}
+
+button {
+    padding: 15px;
+    border-radius: 25px;
+    width: 100%;
+    background-color: var(--Dark-gray-blue);
+    color: white;
+    margin-top: 10px;
+    border: none;
+}
+
+button:hover {
+    background-image:linear-gradient(to top, var(--Light-royal-blue-background), var(--Light-slate-blue-background));
+   }
+
+/* Small Screens */
+@media only screen and (max-width: 500px) {
+    #container {
+        display: block;
+    }
+}
+
